@@ -1,7 +1,4 @@
-clear;
-close all;
-set(0,'defaultAxesFontName', 'FreeSans')
-set(0,'defaultTextFontName', 'FreeSans')
+clear; close all;
 
 filename = 'data.csv';
 data = csvread(filename, 2);
@@ -12,4 +9,3 @@ v = data(:, [1, 2]);
 vcmd = data(:, [1, 3]);
 a = data(:, [1, 4]); 
 acmd = data(:, [1, 5]);
-
