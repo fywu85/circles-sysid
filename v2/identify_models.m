@@ -15,11 +15,3 @@ acmd = data(:, 5);
 sys_iddata = iddata(a, acmd, [], 'SamplingInstants', t);
 tf_sys = tfest(sys_iddata, 4, 0);
 
-figure;
-step(tf_sys, 10);
-
-s = tf('s');
-tf_sys = 1.745 / (s + 1.566);
-
-figure;
-step(tf_sys, 10);
